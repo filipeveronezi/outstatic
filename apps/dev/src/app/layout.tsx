@@ -1,32 +1,13 @@
-import { absoluteUrl } from '@/lib/utils'
 import '../styles/index.css'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Outstatic',
-    template: '%s | Outstatic'
+    default: 'Next.js App Router',
+    template: '%s | Next.js App Router'
   },
-  description: 'A blog starter built with Outstatic.',
-  openGraph: {
-    title: 'Outstatic - A Static Site CMS for Next.js',
-    description: 'A blog starter built with Outstatic.',
-    url: absoluteUrl('/'),
-    siteName: 'Next.js',
-    images: [
-      {
-        url: absoluteUrl('/images/og-image.png'),
-        width: 1800,
-        height: 1600
-      }
-    ],
-    locale: 'en_US',
-    type: 'website'
-  },
-  icons: {
-    icon: [{ url: '/favicon/favicon-32x32.png' }],
-    apple: [{ url: '/favicon/apple-touch-icon.png' }]
-  }
+  description:
+    'A playground to explore new Next.js App Router features such as nested layouts, instant loading states, streaming, and component level data fetching.'
 }
 
 export default function RootLayout({
